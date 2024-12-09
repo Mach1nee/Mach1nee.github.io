@@ -8,7 +8,6 @@ Um pentester que se dedica a participar de programas de bug bounty, além de res
 
 <div style="display: flex; justify-content: flex-start; align-items: center; gap: 20px; margin-left: 1px;">
         <a href="https://tryhackme-badges.s3.amazonaws.com/Mach1ne.png" class="popup img-link  shimmer"><img src="https://tryhackme-badges.s3.amazonaws.com/Mach1ne.png" alt="Your Image Badge" style="max-width: 500px; height: auto;" loading="lazy"></a>
-        <a href="https://github-readme-stats.vercel.app/api?username=Mach1nee&amp;show_icons=true&amp;theme=tokyonight" class="popup img-link  shimmer"><img src="https://github-readme-stats.vercel.app/api?username=Mach1nee&amp;show_icons=true&amp;theme=tokyonight" style="max-width: 300px; height: auto;" loading="lazy"></a>
     </div>
 
  <section>
