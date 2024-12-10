@@ -96,10 +96,10 @@ while True:
 ```conn.send(b'exit')```
 * se o comando for "exit", o servidor envia uma mensagem ao cliente para indicar que a conexão deve ser encerrada. A mensagem é enviada como bytes.
 
-  ```conn.close```
+```conn.close```
   * fecha a conexão com o cliente.
  
-  ```break```
+```break```
   * sai(termina) o loop, interrompendo a execução
    
 ```else```
