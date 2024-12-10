@@ -30,10 +30,12 @@ s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind('localhost', 8080)) #o ip padrão e localhost, e porta 8080
 s.listen(1)
 
+#quando estabelecida a conexão, printa conectado e o addr(ip do cliente)
 while True:
     conn, addr = s.accept()
     print(f"[+]Conectado a {addr}")
-  
+
+#o looping que permite o servidor enviar comandos pro cliente e receber 
     while True:
         command = input("Shell > ")
         if command == 'exit':
