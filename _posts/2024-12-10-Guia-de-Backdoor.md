@@ -47,3 +47,19 @@ while True:
             output = conn.recv(1024))
             print(outut.decode())
 ```
+
+>[!NOTE]
+> Explicação mais detalhada do código para qualquer um entender
+
+* ```s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)```
+* s -> cria um novo objeto de socket
+* socket.AF_INET -> especifica que o socket usará o protocolo IPv4
+* socket.SOCK_STREAM -> indica que o socket será do tipo TCP
+
+```s.bind(('localhost', 8080))```
+* o método bind associa o socket a um endereço IP e uma porta específicos
+* Nesse caso, o servidor foi vinculado ao endereço localhost e à porta 8080
+
+```s.listen(1)```
+* o método listen coloca o socket em modo de escuta, aguardando conexões de clientes.
+* o parâmetro 1 especifica o número máximo de conexões que podem ser enfileiradas. Nesse caso, o servidor aceitará uma conexão à espera de outra.
