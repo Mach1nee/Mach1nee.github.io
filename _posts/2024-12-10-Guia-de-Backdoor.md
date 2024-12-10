@@ -76,6 +76,7 @@ while True:
 * o método accept aguarda até que um cliente se conecte ao servidor. quando o cliente se conecta, accept retorna dois valores:
   
 <ins>conn</ins>: um objeto de socket que permite a comunicação com o cliente.
+
 <ins>addr</ins>:  uma tupla contendo o endereço Ip e a porta do cliente conectado.
   
 ```print(f"[+] Conectado a {addr}")```
