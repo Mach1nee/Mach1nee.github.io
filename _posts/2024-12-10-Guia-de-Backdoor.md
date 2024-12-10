@@ -50,6 +50,9 @@ while True:
 
 >[!NOTE]
 > Explicação mais detalhada do código para qualquer um entender
+> um pouco de programação
+
+# como configurar um servidor de socket
 
 * ```s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)```
 * s -> cria um novo objeto de socket
@@ -63,3 +66,15 @@ while True:
 ```s.listen(1)```
 * o método listen coloca o socket em modo de escuta, aguardando conexões de clientes.
 * o parâmetro 1 especifica o número máximo de conexões que podem ser enfileiradas. Nesse caso, o servidor aceitará uma conexão à espera de outra.
+
+# como estabelecer conexões de clientes no servidor socket
+
+```while True```
+* um looping que permite que o servidor continue aceitando conexões até que seja interrompido.
+
+```conn, addr = s.accept()```
+* o método accept aguarda até que um cliente se conecte ao servidor. quando o cliente se conecta, accept retorna dois valores:
+  
+<ins>conn</ins>: um objeto de socket que permite a comunicação com o cliente.
+<ins>addr</ins>:  uma tupla contendo o endereço Ip e a porta do cliente conectado.
+  
