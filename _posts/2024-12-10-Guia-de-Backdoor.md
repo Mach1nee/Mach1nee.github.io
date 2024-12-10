@@ -78,3 +78,5 @@ while True:
 <ins>conn</ins>: um objeto de socket que permite a comunicação com o cliente.
 <ins>addr</ins>:  uma tupla contendo o endereço Ip e a porta do cliente conectado.
   
+```print(f"[+] Conectado a {addr}")```
+* imprime uma mensagem no console indicando que a conexão foi estabelecida e mostra o endereço do cliente (addr)
