@@ -54,7 +54,7 @@ while True:
 
 # como configurar um servidor de socket
 
-* ```s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)```
+```s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)```
 * s -> cria um novo objeto de socket
 * socket.AF_INET -> especifica que o socket usará o protocolo IPv4
 * socket.SOCK_STREAM -> indica que o socket será do tipo TCP
@@ -80,3 +80,35 @@ while True:
   
 ```print(f"[+] Conectado a {addr}")```
 * imprime uma mensagem no console indicando que a conexão foi estabelecida e mostra o endereço do cliente (addr)
+
+# como estabelecer um looping que permite ao servidor enviar comandos a um cliente conectado e processar as respostas
+
+```while True```
+* um looping que permite que o servidor continue aceitando conexões até que seja interrompido.
+
+```command = input("Shell >")```
+* solicita ao usuário que insira um comando (input), exibindo o promt "shell >"
+
+```if command == 'exit'```
+* veridica se o comando inserido pelo usuário é "exit"
+
+```conn.send(b'exit')```
+* se o comando for "exit", o servidor envia uma mensagem ao cliente para indicar que a conexão deve ser encerrada. A mensagem é enviada como bytes.
+
+  ```conn.close```
+  * fecha a conexão com o cliente.
+ 
+  ```break```
+  * sai(termina) o loop, interrompendo a execução
+   
+```else```
+  * se o comando não for "exit", o servidor executa o bloco de código a seguir.
+
+```conn.send(command.encode())```
+* o comando e inserido é enviado ao cliente após ser convertido para bytes com encode().
+
+```output = conn.recv(1024)```
+* o servidor aguarda e recebe a resposta do cliente, lendo até 1024 bytes de dados
+
+```print(output.decode())```
+* a resposta recebida é convertida de bytes de volta para uma string decode() e é impressa no terminal do servidor.
