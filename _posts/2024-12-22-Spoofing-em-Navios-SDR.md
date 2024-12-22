@@ -51,3 +51,8 @@ Grupos que estão envolvidos em atividades ilegais, como contrabando ou pesca il
 Navios relataram coordenadas falsas, colocando-os no interior de aeroportos ou em locais impossíveis. Isso foi atribuído a ataques de spoofing coordenados.
 * Disfarce de atividades ilícitas:
 Navios envolvidos em contrabando ou pesca ilegal frequentemente desativam seus transponders AIS ou usam spoofing para evitar serem rastreados por autoridades.
+
+# Ferramentas necessários para o spoofing
+para realizar o ataque de spoofing no AIS
+* Um SDR (Software Defined Radio)
+* 
