@@ -5,7 +5,7 @@ categories: [Guia]
 tags: [SDR, Spoofing]
 ---
 
-![imagem](https://github.com/Mach1nee/Mach1nee.github.io/blob/main/imagens/Logic-of-jamming-and-spoofing-attacks-against-vessels.png)
+![imagem](https://raw.githubusercontent.com/Mach1nee/Mach1nee.github.io/refs/heads/main/imagens/spoofing-vessels.jpg)
 
 # Spoofing em Navios SDR
 
