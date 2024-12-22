@@ -20,4 +20,34 @@ como os sistemas de rádio são projetados e operados, oferecendo maior versatil
 
 * SDR Hacking
   Pode-se localizar e rastrear Iates, Aviões, Carros qualquer coisa que esteja emitindo sinal de rádio.
-  é assim que iates são rastreados. Existem duas maneiras para os grandes iates, eles comunicam sua localização via GPS. os grandes iates e navios e também um AIS, 
+  é assim que iates são rastreados. Existem duas maneiras para os grandes iates, eles comunicam sua localização via GPS. os grandes iates e navios e também um AIS, O AIS é um sistema de transmissão de rádio que opera em frequências VHF (161.975 MHz e 162.025 MHz) e é usado para ajudar na navegação marítma. Ele permite que navios transmitam informações como:
+*Identificação (nome do navio, número IMO, etc.);
+* Localização (coordenadas GPS);
+* Velocidade e direção;
+* Status (ancorado, navegando, etc.).
+
+Essas informações são transmitidas continuamente e podem ser recebidas por outros navios, estações terrestres e até satélites. O AIS é essencial para evitar colisões, melhorar a segurança marítima e rastrear o tráfego naval global. 
+
+# como funciona o Spoofing do AIS
+* O AIS opera em frequências de rádio conhecidas o VHF e essas
+  transmissões não são criptografadas.
+* As mensagens AIS seguem o protocolo NMEA0183, que é padronizado e bem documentado, permitindo que alguém com conhecimento técnico crie pacotes falsos.
+* Com um transmissor SDR ou outro hardware apropriado, é possível transmittir sinais falsos que imitam mensagens AIS legítimas.
+
+# Exemplos de manipulação de spoofing no AIS
+* Criar navios fantasmas:
+Transmitir sinais indicando a presença de navios inexistentes em determinadas coordenadas. Isso pode confundir radares e sistemas de monitoramento.
+* Alterar a localização de navios reais:
+Substituir as coordenadas reais de um navio por outras, fazendo parecer que ele está em um local diferente.
+* Interromper o tráfego marítimo:
+Enviar sinais falsos que indicam colisões iminentes ou situações de perigo, causando confusão entre os operadores.
+* Ocultar navios reais:
+Sobrescrever mensagens AIS legítimas com outras que indiquem que o navio está em um estado inativo (como ancorado), quando na verdade ele está em movimento.
+* Sabotagem ou atividades ilícitas:
+Grupos que estão envolvidos em atividades ilegais, como contrabando ou pesca ilegal, podem usar spoofing para disfarçar a localização de seus navios.
+
+# Exemplos Reais que já aconteceram e acontecem com o spoofing no AIS
+* Navios fantasmas no Mar Negro (2017):
+Navios relataram coordenadas falsas, colocando-os no interior de aeroportos ou em locais impossíveis. Isso foi atribuído a ataques de spoofing coordenados.
+* Disfarce de atividades ilícitas:
+Navios envolvidos em contrabando ou pesca ilegal frequentemente desativam seus transponders AIS ou usam spoofing para evitar serem rastreados por autoridades.
