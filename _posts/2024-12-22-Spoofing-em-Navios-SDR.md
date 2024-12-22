@@ -100,3 +100,7 @@ Embora o AIS por si só não seja seguro (por sua falta de criptografia), alguma
   Adicionar mecanismos de autenticação às mensagens AIS poderia 
   dificultar ataques de spoofing, mas isso exige mudanças no padrão 
   global.
+
+  # código
+  * aqui um código de exemplo de como seria o spoofing, o código pede pro usuário um nome pra dar spoofing
+   
