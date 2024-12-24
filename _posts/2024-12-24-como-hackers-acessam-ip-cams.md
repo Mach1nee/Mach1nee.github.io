@@ -7,9 +7,9 @@ tags: [Iot]
 ![imagem](https://static.wixstatic.com/media/6a4a49_a3dc76a12c8e4d2ca3fc6760b370eca3~mv2.png/v1/fill/w_664,h_586,al_c,lg_1,q_90,enc_auto/6a4a49_a3dc76a12c8e4d2ca3fc6760b370eca3~mv2.png)
 
 # Sobre
-  Neste texto, exploraremos um exemplo significativo de espionagem nas atividades do exército russo a pedido do exército da Ucrânia em abril de 2022. Através     
-  dessa narrativa, explicaremos como hackers conseguem acessar câmeras IP, enquanto contamos a história do que ocorreu nesse período crítico da guerra entre a 
-  Rússia e a Ucrânia.
+  vou usar um exemplo significativo, a espionagem nas atividades do exército russo a pedido do exército da ucrânia em abril de 2022,
+  usando esse exemplo vou explicar como hackers ganham acesso a câmeras ip enquanto conto essa história que aconteceu
+  no perído de abril 2022 na guerra da rússia contra a ucrânia.
 
 # A Espionagem em Atividades do Exército Russo
   O ano era 2022 e o mês, abril. O exército russo, em meio a tensões crescentes, fez um pedido a um hacker conhecido pelo pseudônimo de OccupyTheWeb (OTW). Ele  
