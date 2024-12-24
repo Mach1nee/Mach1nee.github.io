@@ -94,3 +94,6 @@ tags: [Lista]
 * winbf.rb – Função para verificar a política de senha do sistema atual. Esta política pode assemelhar-se à política de outros servidores no ambiente de destino.
 * winenum.rb – Enumera o sistema Windows, incluindo variáveis ​​de ambiente, interfaces de rede, roteamento, contas de usuário, etc.
 * wmic.rb – Script para executar comandos WMIC em alvos Windows 2003, Windows Vista e Windows XP e Windows 2008.
+
+# Créditos
+créditos ao Occupytheweb pela lista
